@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Crimson Text', serif;
+  animation: fadein 1.5s;
+  -webkit-animation: fadein 1.5s;
+  }
+  @keyframes fadein {
+      from{opacity: 0;}
+      to{opacity: 1;}
+  }
+  @-webkit-keyframes fadein{
+      from{opacity:0;}
+      to{opacity:1;};
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 1.5em;
+  margin-right: 4em;
+}
+
+.nav-link {
+  margin-left: 1em;
+}
+
+.nav-social {
+  position: relative;
+  margin-left: 60px;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+
+.social-icons {
+  opacity: 0.5;
+  margin-right: 0.4em;
+}
+
+.vert-hero {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  background-image: url("./assets/ThuyMidSummer-4461.jpg");
+  background-size: cover;
+  background-position: 0% 60%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1280px) {
+  .vert-hero {
+    height: 40%;
+    width: 100%;
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bio {
+  height: 100%;
+  width: 50%;
+  float: right;
+  background-color: white;
+  overflow: auto;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (min-device-width: 320px) and (max-device-width: 1280px) {
+  .bio {
+    height: 60%;
+    width: 100%;
+    float: none;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bio > h1 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: black;
+  padding: 100px 60px 20px 60px;
+}
+
+.bio > p {
+  font-size: 1.1em;
+  color: rgb(78, 78, 78);
+  padding: 10px 60px;
+}
+
+a {
+  color: rgba(136, 93, 14, 0.8);
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0d5764;
+  text-decoration: underline;
 }
