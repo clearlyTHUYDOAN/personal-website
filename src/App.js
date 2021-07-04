@@ -25,10 +25,10 @@ function App() {
         </p>
         <p>
           I've grown so much since I started my developer journey with <a href="https://www.brainstation.io" target="_newtab">
-          Brainstation</a> in 2016. That growth is really not evident with this website. So I'm taking some time to, 
+          Brainstation</a> in 2016. That growth is really not evident with this website. So I'm taking some time to 
           properly re-introduce you to the current me.
         </p>
-        <p>For now you get the slightly less suck-ish version of my noob self's website. Stay tuned.</p>
+        <p>For now you get mild dumpster fire version of my old website. Stay tuned.</p>
       </main>
     </div>
   );
